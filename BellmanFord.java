@@ -2,11 +2,13 @@ import java.util.Arrays;
 
 public class BellmanFord{
     public static void main(String[] args) {
-        int V = 3; // Number of vertices
-        int[][] edges = {
-            {0, 1, 1},  // Edge from vertex 0 to 1 with weight 1
-            {1, 2, -1}, // Edge from vertex 1 to 2 with weight -1
-            {2, 0, -1}  // Edge from vertex 2 to 0 with weight -1
+        int V = 5;
+        int[][] edges = new int[][] {
+            {1, 3, 2},
+            {4, 3, -1},
+            {2, 4, 1},
+            {1, 2, 1},
+            {0, 1, 5}
         };
 
         int src = 0;
