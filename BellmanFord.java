@@ -15,6 +15,7 @@ public class BellmanFord{
         int[] ans = bellmanFord(V, edges, src);
         for (int dist : ans) 
             System.out.print(dist + " ");
+        System.out.println();
     }
 
     public static int[] bellmanFord(int V, int edges[][], int src){
